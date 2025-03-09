@@ -15,9 +15,19 @@
 1.2. set the URL
 
 2. add OSC value component
-3. set OSC value handler tp crated sender component
+3. set OSC value handler to crated sender component
 4. drive the value
 5. set path in OSC value to `/hex/<status>/<data1>/<data2>` or `/hex/<statue>/<data1>` or `/hex/<status>`
+
+when specifying MIDI data to send with `/hex/*` use hexadecimal strings. example: `0xCB` or `CB` to represent data in MIDI protocol.
+
+samples:
+
+note: `/hex/90/05` set note 60 on channel 1 to OSC value (0-1) float or bool
+
+pitch bend: `/hex/F0` pitch bend channel 1 to  OSC value (0-1) float or bool
+
+control change: `/hex/B2/08` set control 8 on channel 2 to OSC value (0-1) float or bool
 
 # MIDI protocol 
 There are EIGHT groups (families) of commands which are sent/received by a MIDI device, usually a synthesizer keyboard, sound module, computer, or other piece of hardware. In some instances, computer software will EMULATE a piece of MIDI hardware.
