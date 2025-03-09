@@ -15,7 +15,9 @@
 1.2. set the URL
 
 2. add OSC value component
-3. drive the value
+3. set OSC value handler tp crated sender component
+4. drive the value
+5. set path in OSC value to `/hex/<status>/<data1>/<data2>` or `/hex/<statue>/<data1>` or `/hex/<status>`
 
 # MIDI protocol 
 There are EIGHT groups (families) of commands which are sent/received by a MIDI device, usually a synthesizer keyboard, sound module, computer, or other piece of hardware. In some instances, computer software will EMULATE a piece of MIDI hardware.
