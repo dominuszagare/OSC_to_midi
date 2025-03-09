@@ -23,11 +23,11 @@ when specifying MIDI data to send with `/hex/*` use hexadecimal strings. example
 
 samples:
 
-note: `/hex/90/05` set note 60 on channel 1 to OSC value (0-1) float or bool
+note: `/hex/90/18` set note C1 on channel 1 to OSC value (0-1) float or bool
 
 pitch bend: `/hex/F0` pitch bend channel 1 to  OSC value (0-1) float or bool
 
-control change: `/hex/B2/09` set control 8 on channel 2 to OSC value (0-1) float or bool
+control change: `/hex/B2/09` set control 9 on channel 3 to OSC value (0-1) float or bool
 
 # MIDI protocol 
 There are EIGHT groups (families) of commands which are sent/received by a MIDI device, usually a synthesizer keyboard, sound module, computer, or other piece of hardware. In some instances, computer software will EMULATE a piece of MIDI hardware.
